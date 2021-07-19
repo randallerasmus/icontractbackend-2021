@@ -1,4 +1,4 @@
-package icontractbackend.demo;
+package icontractbackend.demo.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
