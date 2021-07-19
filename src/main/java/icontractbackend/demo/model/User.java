@@ -2,27 +2,26 @@ package icontractbackend.demo.model;
 
 import org.springframework.data.annotation.Id;
 
-import javax.annotation.processing.Generated;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "User")
+@Table(name = "user")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int iduser;
     private String username;
     private String  password;
     private boolean active;
     private String roles;
 
-    public int getId() {
-        return id;
+    public int getIduser() {
+        return iduser;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIduser(int id) {
+        this.iduser = id;
     }
 
     public String getUsername() {
